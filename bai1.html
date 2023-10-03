@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nesteck-K20</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="menu-left">
+      <p class="p-enable">menu 1</p>
+
+      <div class="sub-menu">
+        <ul>
+          <li>sub menu 1</li>
+          <li>sub menu 2</li>
+          <li>sub menu 3</li>
+        </ul>
+      </div>
+    </div>
+    <div class="contain-right">
+      <div class="menu-two color-green">
+        menu 2
+      </div>
+      <div class="content">
+        content
+      </div>
+    </div>
+  </div>
+</body>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: flex;
+    /* padding: 15px;
+    margin: 10px; */
+    background-color: gray;
+    height: 100vh;
+  }
+
+  .sub-menu {
+    display: none;
+  }
+  
+  .menu-left:hover {
+    /* color: red; */
+    background-color: #BBDEFB;
+  }
+
+  .menu-left .p-enable:hover + .sub-menu {
+    display: block;
+  }
+
+  .menu-left {
+    color: red;
+    background-color: #7986CB;
+    height: inherit;
+    flex-grow: 1;
+  }
+  
+  .contain-right {
+    flex-grow: 5;
+    overflow: auto;
+  }
+
+  .contain-right .content {
+    color: blue;
+    background-color: aqua;
+    height: calc(100vh - 20px);
+  }
+
+  .contain-right .color-green {
+    color: green;
+    background-color: chocolate;
+  }
+
+  #colorGreen {
+    color: green;
+  }
+</style>
+
+</html>
