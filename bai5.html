@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login template</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="login-contain">
+      <div class="login-contents">
+        <h2 class="text-center">Customer Login</h2>
+        <input placeholder="User Name" class="txt-input">
+        <input placeholder="Password" class="txt-input">
+        <button class="btn">Login</button>
+        <div class="login-options">
+          <div>
+            <label for="cbxRemember">
+              <input type="checkbox" name="Remember me" id="cbxRemember">
+              Remember me
+            </label>
+          </div>
+
+          <div>
+            <a href="#">Forgot Password</a>
+          </div>
+        </div>
+      </div>
+
+      <h4>
+        <a href="#">Create an Account</a>
+      </h4>
+    </div>
+
+  </div>
+</body>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .txt-input {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .login-options {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #E0E0E0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .login-contain {
+    min-width: 500px;
+    max-width: 500px;
+    min-height: 400px;
+    width: 50%;
+    margin: auto;
+    border-radius: 15px;
+  }
+  
+  .login-contents {
+    background-color: #fff;
+
+  }
+</style>
+
+</html>
